@@ -3,6 +3,8 @@
  */
 $(document).ready(function(){
 
+	"use strict";
+
 	var id = 0; // unique ID for all tree LI elements
 
 	// This can be called again later and any unprepared trees and menus will get prepared
