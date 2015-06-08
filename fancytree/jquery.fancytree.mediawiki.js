@@ -89,6 +89,15 @@
 				// Otherwise see if it's as a JSON list of node data (need to extract as MediaWiki adds parser info)
 				else if(m = response.match(/^.*?(\[[\s\S]+\])/i)) data.result = $.parseJSON(m[1]);
 
+				// Otherwise see if it's as a JSON list of node data contained in an object (as it is in an API response)
+				else if(m = response.match(/^\{/)) {
+					var json = $.parseJSON(response);
+					data.result = false;
+					for( var k in json ) {
+						if( data.result === false && typeof json[k] == 'array' ) data.result = json[k];
+					}
+				}
+
 				// Otherwise just return an empty node set (should raise an error)
 				else data.result = [];
 			};
