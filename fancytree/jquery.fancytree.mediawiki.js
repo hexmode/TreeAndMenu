@@ -23,7 +23,6 @@
 		this.visit(function(node) {
 			var nt = $('<div />').html(node.title);
 			nt = $('a:first', nt).attr('title');
-			console.log(nt + ' (' + node.title + ')');
 			if(nt == title) {
 				node.makeVisible({ noAnimation: true, noEvents: true, scrollIntoView: false });
 				node.setActive({ noEvents: true });
