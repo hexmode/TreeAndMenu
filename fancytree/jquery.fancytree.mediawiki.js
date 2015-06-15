@@ -22,7 +22,7 @@
 		if(typeof(title) === 'undefined') title = mw.config.get('wgTitle');
 		this.visit(function(node) {
 			var nt = $('<div />').html(node.title);
-			nt = $('a:first', nt);
+			nt = $('a:first', nt).attr('title');
 			console.log(nt + ' (' + node.title + ')');
 			if(nt == title) {
 				node.makeVisible({ noAnimation: true, noEvents: true, scrollIntoView: false });
