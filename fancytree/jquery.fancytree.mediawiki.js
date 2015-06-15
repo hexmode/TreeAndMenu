@@ -21,8 +21,9 @@
 		var local = this.ext.mediawiki;
 		if(typeof(title) === 'undefined') title = mw.config.get('wgTitle');
 		this.visit(function(node) {
-			console.log(node);
-			if(node.title == title) {
+			var title = $('a', (node.title)).attr('title');
+			console.log(title);
+			if($(node.title) == title) {
 				node.makeVisible({ noAnimation: true, noEvents: true, scrollIntoView: false });
 				node.setActive({ noEvents: true });
 				return false;
