@@ -14,7 +14,7 @@
  */
 if( !defined( 'MEDIAWIKI' ) ) die( 'Not an entry point.' );
 
-define( 'TREEANDMENU_VERSION','4.1.2, 2015-06-08' );
+define( 'TREEANDMENU_VERSION','4.1.3, 2015-06-15' );
 define( 'TREEANDMENU_TREE', 1 );
 define( 'TREEANDMENU_MENU', 2 );
 
