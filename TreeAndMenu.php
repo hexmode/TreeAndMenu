@@ -29,7 +29,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'version'        => TREEANDMENU_VERSION,
 );
 
-$wgMessagesDirs['TreeAndMenuMagic'] = __DIR__ . '/i18n';
+$wgMessagesDirs['TreeAndMenu'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TreeAndMenuMagic'] = __DIR__ . '/TreeAndMenu.i18n.magic.php';
 require_once( __DIR__ . '/TreeAndMenu_body.php' );
 
