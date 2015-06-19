@@ -14,7 +14,7 @@
  */
 if( !defined( 'MEDIAWIKI' ) ) die( 'Not an entry point.' );
 
-define( 'TREEANDMENU_VERSION','4.1.3, 2015-06-15' );
+define( 'TREEANDMENU_VERSION','4.1.4, 2015-06-19' );
 define( 'TREEANDMENU_TREE', 1 );
 define( 'TREEANDMENU_MENU', 2 );
 
@@ -29,7 +29,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'version'        => TREEANDMENU_VERSION,
 );
 
-$wgExtensionMessagesFiles['TreeAndMenu'] = __DIR__ . '/TreeAndMenu.i18n.php';
+$wgMessagesDirs['TreeAndMenuMagic'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TreeAndMenuMagic'] = __DIR__ . '/TreeAndMenu.i18n.magic.php';
 require_once( __DIR__ . '/TreeAndMenu_body.php' );
 
