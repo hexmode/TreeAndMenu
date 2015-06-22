@@ -6,7 +6,7 @@
 	"descriptionmsg": "treeandmenu-desc",
 	"license-name": "[https://www.gnu.org/licenses/gpl-2.0.html GNU General Public Licence 2.0] or later",
 	"type": "parserhook",
-	"callback": "TreeAndMenu::onLoad",
+	"callback": "TreeAndMenu::onRegistration",
 	"config": {
 		"TreeAndMenuPersistIfId": false,           "@": "Makes trees with id attributes have persistent state"
 	},

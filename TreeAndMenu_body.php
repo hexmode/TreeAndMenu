@@ -6,7 +6,7 @@ class TreeAndMenu {
 	/**
 	 * Called when the extension is first loaded
 	 */
-	public static function onLoad() {
+	public static function onRegistration() {
 		global $wgExtensionFunctions;
 		define( 'TREEANDMENU_TREE', 1 );
 		define( 'TREEANDMENU_MENU', 2 );
