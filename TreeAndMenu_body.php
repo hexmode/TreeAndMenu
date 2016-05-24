@@ -109,7 +109,7 @@ class TreeAndMenu {
 			if( array_key_exists( 'root', $atts ) ) {
 				$root = $parser->parse( $atts['root'], $parser->getTitle(), $parser->getOptions(), false, false )->getText();
 				$html = $tree . '<li class="root">' . $root . $html . '</li></ul>';
-				$opts['minExpandLevel'] = 2;
+				if( !array_key_exists( 'minExpandLevel', $opts ) ) $opts['minExpandLevel'] = 2;
 			} else $html = preg_replace( '|<ul>|', $tree, $html, 1 );
 
 			// Replace any json: markup in nodes into the li
